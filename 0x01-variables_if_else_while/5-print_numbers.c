@@ -1,23 +1,18 @@
 #include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
 /**
-* main - Prints the number
-*
-* Description - prints "single digit numbers of base 10 starting from 0"
-*
-* Return: 0 success
-*/
+ * main - Entry point
+ * Description: A program that prints all single digit up to 10
+ * Return: 0
+ */
 
 int main(void)
 {
-	int number = 0;
+	int a;
 
-	while (number < 10)
+	for (a = 0; a < 10; a++)
 	{
-		putchar("%d\n", number);
-		number++;
+		printf("%d", a);
 	}
-
+	printf("\n");
 	return (0);
 }
