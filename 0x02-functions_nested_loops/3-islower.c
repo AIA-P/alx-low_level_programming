@@ -13,9 +13,16 @@
 
 int _islower(int c)
 {
-	if (c >= 'a' && c <= 'z')
+	int i = 'a';
 
-		return (1);
-	else
-		return (0);
+	for (i = 'a'; i <= 'z'; i++)
+	{
+		/* refer in c*/
+		if (c == i)
+		{
+			return (1);
+		}
+
+	}
+	return (0);
 }
